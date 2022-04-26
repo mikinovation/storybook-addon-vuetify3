@@ -1,0 +1,42 @@
+{
+  "name": "storybook-addon-vuetify3",
+  "version": "0.0.1-beta",
+  "main": "dist/preset.js",
+  "files": [
+    "dist/*.js",
+    "dist/**/*"
+  ],
+  "license": "MIT",
+  "author": "Mikihiro Saito",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mikinovation/storybook-addon-vuetify3.git"
+  },
+  "keywords": [
+    "storybook",
+    "addons",
+    "vuetify"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "babel ./src --out-dir ./dist",
+    "bump:release": "yarn version",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@mdi/font": "^6.6.96",
+    "vuetify": "^3.0.0-beta.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.5",
+    "rimraf": "^3.0.2",
+    "vue": "^3.2.33"
+  },
+  "peerDependencies": {
+    "vue": "*",
+    "vuetify": "*"
+  }
+}
