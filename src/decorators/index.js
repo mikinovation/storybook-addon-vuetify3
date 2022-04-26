@@ -1,0 +1,1 @@
+export {withVuetify} from "./withVuetify";
