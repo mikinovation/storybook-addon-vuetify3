@@ -1,17 +1,9 @@
-import {createApp, defineComponent} from 'vue'
+import { app } from '@storybook/vue3'
+import {defineComponent} from 'vue'
 import {makeDecorator} from '@storybook/addons'
 import {createVuetify} from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-
-createApp().use(
-  createVuetify(
-    {
-      components,
-      directives
-    }
-  )
-)
 
 export const VuetifyPlugin = {
   installed: false,
@@ -29,6 +21,15 @@ export const withVuetify = makeDecorator({
   parameterName: 'vuetify',
   wrapper: (Story, context, {options = {}}) => {
     VuetifyPlugin.install()
+
+    app.use(
+      createVuetify(
+        {
+          components,
+          directives
+        }
+      )
+    )
 
     const WrappedComponent = Story(context)
 
