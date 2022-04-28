@@ -1374,6 +1374,11 @@
   resolved "https://registry.yarnpkg.com/@mdi/font/-/font-5.9.55.tgz#41acd50b88073ded7095fc3029d8712b6e12f38e"
   integrity sha512-jswRF6q3eq8NWpWiqct6q+6Fg/I7nUhrxYJfiEM8JJpap0wVJLQdbKtyS65GdlK7S7Ytnx3TTi/bmw+tBhkGmg==
 
+"@mdi/font@^6.6.96":
+  version "6.6.96"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-6.6.96.tgz#4eee6faee5f44d3ec401d354fb95775cd6699575"
+  integrity sha512-FbcvG9z17hwZ7IwX5XeOR1UYGoLq+gTKq6XNPvJFuCpn599GdiPCJbAmmDBJb+jMYXjKYr0lCxfouWGxDA82sA==
+
 "@mdx-js/loader@^1.6.22":
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-1.6.22.tgz#d9e8fe7f8185ff13c9c8639c048b123e30d322c4"
@@ -11071,6 +11076,14 @@ store2@^2.12.0:
   version "2.13.2"
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.13.2.tgz#01ad8802ca5b445b9c316b55e72645c13a3cd7e3"
   integrity sha512-CMtO2Uneg3SAz/d6fZ/6qbqqQHi2ynq6/KzMD/26gTkiEShCcpqFfTHgOxsE0egAq6SX3FmN4CeSqn8BzXQkJg==
+
+storybook-addon-vuetify3@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/storybook-addon-vuetify3/-/storybook-addon-vuetify3-1.0.0.tgz#56d1ffa91066ed9fdf0eb9d0d573d07cde33b93e"
+  integrity sha512-c0gdXCqNAt4IPOjbVGbXuGmuYtatg9rnHI2YBG+V+EXvqmh6HTA8YpPRV+GIiy6eqMl02Aje76cMzhaWwttGew==
+  dependencies:
+    "@mdi/font" "^6.6.96"
+    vuetify "^3.0.0-beta.0"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
