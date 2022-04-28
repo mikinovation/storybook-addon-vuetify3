@@ -21,7 +21,7 @@ module.exports = {
 Add `vueitfy` decorator to `.storybook/preview.js`
 
 ```js
-import { withVuetify } from '@socheatsok78/storybook-addon-vuetify/dist/decorators'
+import { withVuetify } from 'storybook-addon-vuetify3/dist/decorators'
 
 export const decorators = [
   withVuetify

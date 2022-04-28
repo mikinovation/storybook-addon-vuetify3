@@ -1,6 +1,8 @@
 import {createApp, defineComponent} from 'vue'
 import {makeDecorator} from '@storybook/addons'
 import {createVuetify} from 'vuetify'
+import * as components from 'vuetify/components'
+import * as directives from 'vuetify/directives'
 
 createApp().use(
   createVuetify(
