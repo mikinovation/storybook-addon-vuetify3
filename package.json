@@ -13,10 +13,15 @@
     "url": "git@github.com:mikinovation/storybook-addon-vuetify3.git"
   },
   "keywords": [
-    "storybook",
-    "addons",
+    "storybook-addons",
+    "vue",
     "vuetify"
   ],
+  "storybook": {
+    "displayName": "storybook-addon-vuetify3",
+    "unsupportedFrameworks": ["react", "angular"],
+    "supportedFrameworks": ["vue"]
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "babel ./src --out-dir ./dist",
