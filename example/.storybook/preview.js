@@ -1,4 +1,4 @@
-import {withVuetify} from "../../dist/decorators";
+import { withVuetify } from 'storybook-addon-vuetify3/dist/decorators'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -10,4 +10,6 @@ export const parameters = {
   },
 }
 
-export const decorators = [withVuetify]
+export const decorators = [
+  withVuetify
+]
