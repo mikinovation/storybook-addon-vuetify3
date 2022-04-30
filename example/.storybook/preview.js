@@ -12,7 +12,9 @@ export const parameters = {
 }
 
 export const globalTypes = {
-  theme: myCustomLightTheme
+  theme: {
+    defaultTheme: 'myCustomLightTheme',
+  }
 }
 
 export const decorators = [
