@@ -19,8 +19,10 @@ export const VuetifyPlugin = {
 export const withVuetify = makeDecorator({
   name: 'withVuetify',
   parameterName: 'vuetify',
-  wrapper: (Story, context, {options = { theme: {}}}) => {
+  wrapper: (Story, context) => {
     VuetifyPlugin.install()
+
+    const options = context.parameters.globalTypes.vuetify || {}
 
     app.use(
       createVuetify(
@@ -44,7 +46,7 @@ export const withVuetify = makeDecorator({
         </v-app>
       `,
       setup() {
-        const theme = context.parameters.globalTypes ? context.parameters.globalTypes.defaultTheme : 'light'
+        const theme = options.defaultTheme ? options.defaultTheme : 'light'
 
         return { theme }
       }
