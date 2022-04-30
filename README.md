@@ -80,12 +80,20 @@ import { withVuetify } from 'storybook-addon-vuetify3/dist/decorators'
 import { myCustomLightTheme } from "../src/plugins/vuetify";
 
 export const globalTypes = {
-  theme: myCustomLightTheme
+  vuetify: {
+    theme: {
+      defaultTheme: 'myCustomLightTheme',
+      themes: {
+        myCustomLightTheme
+      }
+    }
+  }
 }
 
 export const decorators = [
   withVuetify
 ]
+
 ```
 
 ## License
