@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-vuetify3",
-  "version": "2.0.0-beta.4",
+  "version": "2.0.0-beta.5",
   "description": "storybook addon for decoration style with vuetify3",
   "main": "dist/preset.js",
   "files": [
