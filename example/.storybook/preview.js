@@ -1,5 +1,5 @@
 import { withVuetify } from 'storybook-addon-vuetify3/dist/decorators'
-import { myCustomLightTheme } from "@/plugins/vuetify";
+import { myCustomLightTheme } from "../src/plugins/vuetify";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
