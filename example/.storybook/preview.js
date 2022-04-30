@@ -1,5 +1,5 @@
 import { withVuetify } from 'storybook-addon-vuetify3/dist/decorators'
-import { myCustomLightTheme } from "../src/plugins/vuetify";
+import {myCustomLightTheme} from "@/plugins/vuetify";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -8,12 +8,17 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
-  },
+  }
 }
 
 export const globalTypes = {
-  theme: {
-    defaultTheme: 'myCustomLightTheme',
+  vuetify: {
+    theme: {
+      defaultTheme: 'myCustomLightTheme',
+      themes: {
+        myCustomLightTheme
+      }
+    }
   }
 }
 

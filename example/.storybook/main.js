@@ -6,7 +6,7 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "storybook-addon-vuetify3"
+    'storybook-addon-vuetify3'
   ],
   "framework": "@storybook/vue3",
   "core": {
