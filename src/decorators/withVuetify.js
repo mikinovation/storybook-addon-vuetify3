@@ -46,7 +46,7 @@ export const withVuetify = makeDecorator({
         </v-app>
       `,
       setup() {
-        const theme = options.defaultTheme ? options.defaultTheme : 'light'
+        const theme = options.theme && options.theme.defaultTheme ? options.theme.defaultTheme : 'light'
 
         return { theme }
       }
