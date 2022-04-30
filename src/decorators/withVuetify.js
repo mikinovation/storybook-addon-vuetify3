@@ -26,7 +26,7 @@ export const withVuetify = makeDecorator({
       createVuetify(
         {
           components,
-          directives
+          directives,
         }
       )
     )
@@ -36,12 +36,17 @@ export const withVuetify = makeDecorator({
     return defineComponent({
       components: {WrappedComponent},
       template: `
-        <v-app>
+        <v-app :theme="theme">
           <v-container fluid>
-            <wrapped-component/>
+            <wrapped-component />
           </v-container>
         </v-app>
-      `
+      `,
+      setup() {
+        const theme = context.globals ? context.globals.theme : 'light'
+
+        return { theme }
+      }
     })
   }
 })
