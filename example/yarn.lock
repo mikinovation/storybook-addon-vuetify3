@@ -11077,10 +11077,10 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.13.2.tgz#01ad8802ca5b445b9c316b55e72645c13a3cd7e3"
   integrity sha512-CMtO2Uneg3SAz/d6fZ/6qbqqQHi2ynq6/KzMD/26gTkiEShCcpqFfTHgOxsE0egAq6SX3FmN4CeSqn8BzXQkJg==
 
-storybook-addon-vuetify3@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/storybook-addon-vuetify3/-/storybook-addon-vuetify3-1.0.0.tgz#56d1ffa91066ed9fdf0eb9d0d573d07cde33b93e"
-  integrity sha512-c0gdXCqNAt4IPOjbVGbXuGmuYtatg9rnHI2YBG+V+EXvqmh6HTA8YpPRV+GIiy6eqMl02Aje76cMzhaWwttGew==
+storybook-addon-vuetify3@^2.0.0-beta.1:
+  version "2.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/storybook-addon-vuetify3/-/storybook-addon-vuetify3-2.0.0-beta.1.tgz#a072392637209526e1cb3019c8cdf9c4a40e1a4d"
+  integrity sha512-cZ9yophQGd7ab5JeBbgPQlglFAwzKvRbRinBO5/NlawfQLV+k3I/IH5/Rs7DxleJ9B5w/5zhyCbwvUV/HWpt2A==
   dependencies:
     "@mdi/font" "^6.6.96"
     vuetify "^3.0.0-beta.0"

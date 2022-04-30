@@ -43,7 +43,7 @@ export const withVuetify = makeDecorator({
         </v-app>
       `,
       setup() {
-        const theme = context.globals ? context.globals.theme : 'light'
+        const theme = context.parameters.globalTypes ? context.parameters.globalTypes.theme : 'light'
 
         return { theme }
       }
