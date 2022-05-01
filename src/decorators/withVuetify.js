@@ -22,7 +22,8 @@ export const withVuetify = makeDecorator({
   wrapper: (Story, context) => {
     VuetifyPlugin.install()
 
-    const options = context.parameters.globalTypes.vuetify || {}
+    const globalTypes = context.parameters.globalTypes ? context.parameters.globalTypes : {}
+    const options = globalTypes && globalTypes.vuetify ? globalTypes.vuetify : {}
 
     app.use(
       createVuetify(
