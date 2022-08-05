@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "../node_modules/.bin/vue-cli-service serve",
-    "build": "../node_modules/.bin/vue-cli-service build",
-    "lint": "../node_modules/.bin/vue-cli-service lint",
-    "storybook": "../node_modules/.bin/start-storybook -p 6006",
-    "build-storybook": "../node_modules/.bin/build-storybook"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
