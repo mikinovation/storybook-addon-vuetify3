@@ -4,8 +4,6 @@ import 'vuetify/styles'
 
 // Vuetify
 import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
 
 export const myCustomLightTheme = {
   dark: false,
@@ -26,8 +24,6 @@ export const myCustomLightTheme = {
 export default createVuetify(
   // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
   {
-    components,
-    directives,
     theme: {
       defaultTheme: 'myCustomLightTheme',
       themes: {
