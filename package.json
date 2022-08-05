@@ -20,8 +20,13 @@
   ],
   "storybook": {
     "displayName": "storybook-addon-vuetify3",
-    "unsupportedFrameworks": ["react", "angular"],
-    "supportedFrameworks": ["vue"]
+    "unsupportedFrameworks": [
+      "react",
+      "angular"
+    ],
+    "supportedFrameworks": [
+      "vue"
+    ]
   },
   "scripts": {
     "prebuild": "rimraf dist",
@@ -31,6 +36,8 @@
   },
   "dependencies": {
     "@mdi/font": "^6.6.96",
+    "@storybook/addons": "^6.5.10",
+    "@storybook/vue3": "^6.5.10",
     "vuetify": "^3.0.0-beta.0"
   },
   "devDependencies": {
